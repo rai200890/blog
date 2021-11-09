@@ -21,7 +21,7 @@ config :livebook, LivebookWeb.Endpoint,
   code_reloader: false
 
 config :livebook,
-  root_path: ".",
+  root_path: System.get_env("LIVEBOOK_ROOT_PATH", "notebooks"),
   default_runtime: {Livebook.Runtime.MixStandalone, ["."]},
   authentication_mode: :password,
   token_authentication: false,

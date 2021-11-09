@@ -1,0 +1,37 @@
+# SQL Introducao
+
+## O que é SQL?
+
+Structured Query Language - linguagem de pesquisa declarativa padrão para banco de dados relacional. Foi inspirado na álgebra relacional.
+
+## O que é Álgebra Relacional?
+
+Teoria baseada na lógica de predicados e na teoria dos conjuntos para modelagem e busca de dados.
+
+## Como funciona o modelo relacional
+
+Modelo proposto por Edgar Frank Codd em 1970.
+
+- Esse modelo organiza dados em tabelas. Cada tabela representa uma tipo de entidade, uma abstração do mundo real como cliente ou produto por exemplo.  
+
+- Cada linha da tabela é chamada de registro ou tupla. Ela representa uma instância dessa entidade. 
+Exemplo:
+A cliente Maria da Silva.
+O produto batata.
+
+- As colunas das tabelas são chamados de atributos. Atributos são valores associados àquela instância como endereço(no caso de cliente) e preço(no caso de produto).
+
+- Cada linha da tabela é identificada de forma única por uma chave. Essa chave é designada de chave primária(primary key).
+- Conseguimos estabelecer relacionamentos entre tabelas adicionando colunas que apontam para chaves primárias de outras tabelas, esse tipo de chave é chamado de chave estrangeira(foreign key). Uma chave primária pode conter uma ou mais colunas, sendo esse último caso designado chave primária composta(composite primary key). É comum que em uma tabela exista uma outra coluna que não seja chave primária e que identifique um registro unicamente, esse tipo de chave é designado de chave candidata. Um exemplo de chave candidata para um cliente poderia ser o cpf.
+
+## Tipos de relacionamento entre tabelas(cardinalidade):
+
+- um para um(1:1)
+- um para muitos(1:n)
+- muitos para muitos(n:n)
+
+
+## Diagrama entidade relacionamento
+
+![Modelo entidade relacionamento](./images/entidade_relacionamento.png)
+
